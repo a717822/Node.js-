@@ -6,6 +6,7 @@ ThinkPHP里的Auth.class权限验证类，将该类的思想移植到Node.js里
 ### 如何使用
 
 ### 注意：在使用前，先引入 https://github.com/a717822/db db模块
+### 数据库的设计请查看我的个人博客: https://www.yangzilong.cn/Detail/2
 
 1）在main.js引入
 ``` bash
