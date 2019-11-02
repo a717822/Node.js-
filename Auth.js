@@ -29,6 +29,7 @@ exports.yangAuth = {
 
                     ret.id = 1;
                     ret.msg = '权限验证通过';
+                    ret.rules = rules;
 
                     callback (ret);
 
@@ -70,6 +71,7 @@ exports.yangAuth = {
                 let groups = await db.sql.table(config.auth_groups).where({
                     id:access.group_id
                 }).querySql();
+
 
                 groups.forEach(function (group) {
 
@@ -146,6 +148,7 @@ exports.yangAuth = {
                             ret.id = 1;
                             ret.msg = '获取到该权限组对应的权限';
                             ret.rules = rules;
+
 
                             callback (ret);
 
